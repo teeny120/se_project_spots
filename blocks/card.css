@@ -1,17 +1,21 @@
-.card {
-    width: 413px;
-}
-
 .card__image {
     height: 413px;
-    width: 413px;
-    object-fit: cover;
+    width: 100%;
+    object-fit: 100%;
     display: block;
+}
+
+.card__title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 353px;
 }
 
 .card__content {
     display: flex;
     align-items: center;
+    height: 18px;
     justify-content: space-between;
 }
 
@@ -22,4 +26,16 @@
     border: none;
     background-color: transparent;
     opacity: 40%;
+}
+
+@media screen and (max-width: 627px) {
+    .card__image {
+        height: 288px;
+        width: 288px;
+    }
+
+    .card__title {
+        max-width: 257px;
+    }
+
 }
