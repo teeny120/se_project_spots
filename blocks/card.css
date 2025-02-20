@@ -2,9 +2,9 @@
     height: 413px;
     width: 100%;
     border-radius: 8px;
-    object-fit: 100%;
+    object-fit: cover;
     display: block;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .card__title {
