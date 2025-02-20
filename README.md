@@ -1,21 +1,35 @@
-# Project 3: Spots
+# Project 3: Spots 
+
+An Image Sharing Site
 
 ### Overview  
 
-* Intro  
-* Figma  
-* Images  
+* Description
+* Tech Stack  
+* Deployment link
+* Images 
+* Video
+
+## Description
   
-**Intro**
+Spots is a image sharing site for anyone who likes taking photos and displaying them for others to see and use. Users can create profiles, upload their avatar, a little about themselves as well as images. A great way to show the world who you are and what you love.
+
+## Tech Stack
+
+*HTML
+*CSS
+*Responsive Design
+
+### Deployment 
+
+This webpage is deployed to GitHub Pages
+
+* [Deployment Link](https://teeny120.github.io/se_project_spots/)
   
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
+## Images
   
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+Here is an example of a loaded image of [our assignment](https://www.figma.com/design/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project%3A-Spots?node-id=2-72&t=Nx0nfR5zqnQ2sWLH-4).
+
+## Video
+
+Please take a moment to see how to use this website via the video link here.
