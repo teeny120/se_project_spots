@@ -7,6 +7,7 @@
 }
 
 .profile__avatar {
+    object-fit: cover;
     margin-right: 20px;
     height: 190px;
     width: 190px;
@@ -23,12 +24,13 @@
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 32px;
+    color:#212121
     line-height: 1;
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    line-clamp: 3;
+    -webkit-line-clamp: 3;
     max-width: 420px;
 }
 
@@ -37,28 +39,26 @@
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 16px;
-    max-width: 97px;
-    max-height: 16px;
     color: #212121;
     opacity: 70%;
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    line-clamp: 3;
+    -webkit-line-clamp: 3;
     max-width: 420px;
 }
 
 .profile__edit-btn {
+    display: flex;
+    gap: 8px;
     margin-top: auto;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 16px;
     border: none;
     background-color: #FCF5E5;
-    max-width: 107.34px;
-    max-height: 16px;
-    color: rgba(33, 33, 33, 1);
+    color: rgba(33, 33, 33, 1) 70%;
 
 }
 
