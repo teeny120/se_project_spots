@@ -32,4 +32,4 @@ Here is an example of a loaded image of [our assignment](https://www.figma.com/d
 
 ## Video
 
-Please take a moment to see how to use this website via the video link here.
+Please take a moment to see how to use this website via the video [link here](https://drive.google.com/file/d/1U3CrS3Iq0Bxi-NmhD6bh1ycNECO_K17i/view?usp=sharing).
