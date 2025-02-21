@@ -58,8 +58,13 @@
     font-size: 16px;
     border: none;
     background-color: #FCF5E5;
-    color: rgba(33, 33, 33, 1) 70%;
+    color: rgba(33, 33, 33, 1);
+    opacity: 70%;
+    cursor: pointer;
+}
 
+.profile__edit-btn:hover {
+    opacity: 100%;
 }
 
 .profile__add-btn {
@@ -68,12 +73,18 @@
     width: 149px;
     height: 52px;
     background-color: #212121;
+    border: none;
     border-radius: 8px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     color: rgba(252, 245, 229, 1);
     font-weight: 500;
     font-size: 16px;
     line-height: 1;
+    cursor: pointer;
+}
+
+.profile__add-btn:hover {
+    opacity: 80%;
 }
 
 @media screen and (max-width: 627px) {
@@ -110,5 +121,9 @@
     .profile__add-btn {
         margin: 0;
         width: 100%;
+    }
+
+    .profile__edit-btn {
+        align-self: center;
     }
 }
