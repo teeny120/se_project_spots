@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 16px;;
     visibility: hidden;
 }
 
@@ -23,6 +24,7 @@
        width: 100%;
        box-sizing: border-box;
        position: relative;
+       border-radius: 8px;
     }
 
     .modal__close-btn {
@@ -108,6 +110,30 @@
        cursor: pointer;
     }
 
-    .modal__submit-btn:hover {
-
+@media screen and (max-width: 627px) {
+    .modal {
+        padding: 0 16px;;
     }
+    
+    .modal__container {
+        padding: 12px;
+    }   
+
+    .modal__title {
+        font-size: 20px;
+        margin: 10px 0 34px;
+    }
+
+    .modal__close-btn {
+        margin-top: 12px;
+        margin-right: 12px;
+    }
+
+    .modal__label {
+        margin-bottom: 24px;
+    }
+
+    .modal__submit-btn {
+        width: 100%;
+    }
+} 
