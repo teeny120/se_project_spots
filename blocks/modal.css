@@ -37,10 +37,17 @@
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        color: rgba(33, 33, 33, 1);
         opacity: 40%;
         border: 2px;
         cursor: pointer;
     }
+
+    .modal__close-btn:hover {
+        color: rgba(33, 33, 33, 1);
+        opacity: 100%;
+    }
+    
 
     .modal__title {
         margin: 0 0 32px;
@@ -74,11 +81,19 @@
         font-size: 20px;
         line-height: 100%;
         letter-spacing: 0%;
-        border: 1px solid rgba(33, 33, 33, 1);
+        border: 1px solid rgba(33, 33, 33, .04);
         border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .modal_input:hover {
+        border: 1px solid rgba(33, 33, 33, 1);
+    }
+
+    .modal__input-text {
+        color: rgba(33, 33, 33, 1);
     }
     
-
     .modal__submit-btn {
        width: 156px;
        padding: 18px 0; 
@@ -93,3 +108,6 @@
        cursor: pointer;
     }
 
+    .modal__submit-btn:hover {
+
+    }
