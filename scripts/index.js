@@ -80,4 +80,6 @@ for (let i = 0; i < initialCards.length; i++) {
     cardsList.prepend(cardElement);
 }
 initialCards.forEach(function (item) {
+    const cardElement = getCardElement(item);
+    cardsList.append(cardElement);
 } );
