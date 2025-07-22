@@ -40,20 +40,17 @@ const cardsList = document.querySelector(".cards__list");
 
 
 function getCardElement(data) {
-    const cardElement = cardTemplate.content.querySelector(".card").cloneNode(true);
-    const cardNameEl = cardElement.querySelector(".card__title");
+    const cardElement = cardTemplate.cloneNode(true);
+    const cardTitleEl = cardElement.querySelector(".card__title");
     const cardImage = cardElement.querySelector(".card__image");
 
     cardNameEl.textContent = data.name;
     cardImage.src = data.link;
     cardImage.alt = data.name;
-
+    cardTitleEl.textContent = data.name;
 
     return cardElement;    
 }
-
-
-
 function openModal(){
     editModalNameInput.value = profileName.textContent;
     editModalDescriptionInput.value = profileDescription.textContent;
@@ -82,3 +79,5 @@ for (let i = 0; i < initialCards.length; i++) {
     const cardElement = getCardElement(initialCards[i]);
     cardsList.prepend(cardElement);
 }
+initialCards.forEach(function (item) {
+} );
