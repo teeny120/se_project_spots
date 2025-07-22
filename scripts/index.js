@@ -40,11 +40,11 @@ const cardsList = document.querySelector(".cards__list");
 
 
 function getCardElement(data) {
-    const cardElement = cardTemplate.cloneNode(true);
+    const cardElement = cardTemplate.content.querySelector(".card").cloneNode(true);;
     const cardTitleEl = cardElement.querySelector(".card__title");
     const cardImage = cardElement.querySelector(".card__image");
 
-    cardNameEl.textContent = data.name;
+    cardTitleEl.textContent = data.name;
     cardImage.src = data.link;
     cardImage.alt = data.name;
     cardTitleEl.textContent = data.name;
@@ -57,7 +57,8 @@ function getCardElement(data) {
     const cardDeleteBtnEl = cardElement.querySelector(".card__delete-button");
     cardDeleteBtnEl.addEventListener("click", () => {
     cardElement.remove();
-});
+    cardElement = null;
+})
 
     return cardElement;    
 }
@@ -87,13 +88,15 @@ editModalCloseBtn.addEventListener("click", closeModal);
 
 editFormElement.addEventListener("submit", handleEditFormSubmit);
 
-const inputValues = {
-    name: captionInputEl.value,
-    link: linkInputEl.value,
-};
+// const captionInputEl = document.querySelector('#caption-input');
 
-const cardElement = getCardElement(inputValues);
-cardsList.prepend(cardElement);
+// const inputValues = {
+//     name: captionInputEl.value,
+//     link: linkInputEl.value,
+// };
+
+// const cardElement = getCardElement(inputValues);
+// cardsList.prepend(cardElement); 
 
 initialCards.forEach(function (item) {
     const cardElement = getCardElement(item);
