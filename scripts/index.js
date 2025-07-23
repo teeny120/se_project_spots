@@ -1,4 +1,8 @@
 const initialCards = [ 
+    {
+    name: "Golden Gate Bridge",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
+    },   
     { 
     name: "Val Thorens", 
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg", 
@@ -51,7 +55,7 @@ function getCardElement(data) {
 
     const cardLikeBtnEl = cardElement.querySelector(".card__like-btn");
     cardLikeBtnEl.addEventListener("click", () => {
-        cardLikeBtnEl.classList.toggle("")
+        cardLikeBtnEl.classList.toggle("card__like-button_active")
     });
 
     const cardDeleteBtnEl = cardElement.querySelector(".card__delete-button");
@@ -88,16 +92,22 @@ editModalCloseBtn.addEventListener("click", closeModal);
 
 editFormElement.addEventListener("submit", handleEditFormSubmit);
 
-// const captionInputEl = document.querySelector('#caption-input');
+for (let i = 0; i < initialCards.length; i++) {
+    const cardElement = getCardElement(initialCards[i]);
+    cardsList.prepend(cardElement);
+}
 
-// const inputValues = {
-//     name: captionInputEl.value,
-//     link: linkInputEl.value,
-// };
+//  const captionInputEl = document.querySelector('#caption-input');
 
-// const cardElement = getCardElement(inputValues);
-// cardsList.prepend(cardElement); 
+//  const inputValues = {
+//      name: captionInputEl.value,
+//      link: linkInputEl.value,
+//  };
 
+ const cardElement = getCardElement(inputValues);
+ cardsList.prepend(cardElement); 
+
+ 
 initialCards.forEach(function (item) {
     const cardElement = getCardElement(item);
     cardsList.append(cardElement);
