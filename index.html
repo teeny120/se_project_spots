@@ -30,7 +30,7 @@
               Profile
             </button>
           </div>
-          <button type="button" class="profile__edit-btn">
+          <button type="button" class="new-post-btn">
             <img src="./images/plus.icon.svg" alt="Plus icon" /> New Post
           </button>
         </section>
@@ -52,17 +52,14 @@
       <footer class="footer">
         <p class="footer__text">2023 © Spots</p>
       </footer>
-      <div class="modal" id="edit-modal">
+      <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">Edit profile</h2>
-          <form name="edit-profile" class="modal__form">
+          <form class="modal__form">
             <label for="profile-name-input" class="modal__label"
-              >Name
-              <input
-                id="profile-name-input"
-                type="text"
-                class="modal__input"
+              >Name 
+              <input id="profile-name-input" type="text" class="modal__input"
                 placeholder="Type your name"
               />
             </label>
@@ -79,27 +76,24 @@
           </form>
         </div>
       </div>
-      <div class="modal" id="add-modal">
+      <div class="modal" id="new-post-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">New post</h2>
-          <form name="add-post" class="modal__form">
+          <form class="modal__form">
             <label for="card-image-input" class="modal__label"
-              >Image link
-              <input
-                id="card-image-input"
-                type="url"
-                class="modal__input"
-                placeholder="Paste a link to the picture"
+              >Image link 
+              <input id="card-image-input" type="url" class="modal__input"
+                placeholder="Place a link to the picture"
               />
             </label>
-            <label for="card-image-input" class="modal__label"
-              >Description
+            <label for="card-caption-input" class="modal__label"
+              >Caption
               <input
-                id="profile-description-input"
+                id="card-caption-input"
                 type="text"
                 class="modal__input"
-                placeholder="Describe yourself"
+                placeholder="Type your caption"
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
